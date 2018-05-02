@@ -84,7 +84,7 @@ handles.tdFig = 0;
 
 %What should every modality be sampled to? This INTERPOLATES, need to make
 %sure at every step that this is ok
-handles.DATA.common_Fs = 1000;
+handles.DATA.common_Fs = 422;
 
 handles.BLP_pow = [];
 
