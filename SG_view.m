@@ -29,7 +29,7 @@ function varargout = SG_view(varargin)
 % Edit the above text to modify the response to help SG_view
 
 % Last Modified by GUIDE v2.5 06-Jun-2017 18:02:40
-
+addpath(genpath('lib'))
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
