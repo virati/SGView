@@ -49,3 +49,4 @@ The SGViewer incorporates simple gain compression measures that may assist in de
 ## Notes
 My original goal for this was overly-ambitious. I wanted it to include everything analysis-wise that existed in 2013 to address frequency-domain electrophysiology. It took a while but I realized that the field of electrophysiology was nowhere near the level that neuroimaging was and there really was no way to do a simple frontend for electrophysiology analysis. There are simply way too many knobs. You can see this attempt in my earlier commits.
 
+Development of this viewer was essentially halted completely in ~2015. There may be functionality that is outdated. Development was briefly restarted in early 2019 to incorporate some gain compression assessment functionality to this tool and remove superfluous UI elements. The library was then tested on 1 machine to ensure it was working as intended.
