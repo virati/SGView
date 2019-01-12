@@ -5,8 +5,10 @@ A MATLAB based spectrogram viewer that imports generic timeseries data. Beyond t
 ## Installation
 The folder is self-contained and includes related libraries.
 
-* Filtfilthd
 
+### Dependencies
+* Filtfilthd
+* 
 
 ## Frontend
 The frontend is focused on time-frequency domain displays of data. UI is available for more advanced functionality. The primary functionality of interest for contemporary (2013-2018) clinical electrophysiology is likely
