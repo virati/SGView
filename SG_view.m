@@ -89,7 +89,6 @@ handles.DATA.common_Fs = 422;
 handles.BLP_pow = [];
 
 handles.brLFP.Fs = str2num(get(handles.edtLFP_Fs,'String'));
-handles.hdEEG.Fs = str2num(get(handles.edtEEG_Fs,'String'));
 
 %% NEW STRUCTURES
 
