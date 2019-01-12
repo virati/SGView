@@ -1343,7 +1343,7 @@ handles.SG.SG_Labels = {};
 %Make a local container for the raw data
 chann_ts{1} = [];
 chann_fs = handles.DATA.chann{min(a)}.Fs;
-ds_fact = 2;
+ds_fact = 1;
 
 for ii = a
     dummy_chann = handles.DATA.chann{ii};
@@ -1353,7 +1353,7 @@ chann_fs = chann_fs ./ ds_fact;
 
 %Without downsampling ahead of time
 for ii = a
-    [handles.TF.chann{ii}.S, handles.TF.chann{ii}.F, handles.TF.chann{ii}.T] = spectrogram(chann_ts{ii}.ts,blackmanharris(512),500,2^10,chann_fs); 
+    [handles.TF.chann{ii}.S, handles.TF.chann{ii}.F, handles.TF.chann{ii}.T] = spectrogram(chann_ts{ii}.ts,blackmanharris(512),500,2^10,422)%chann_fs); 
 end
 %Update the decimated Fs
 handles.TF.Fs = chann_fs;
@@ -1929,7 +1929,7 @@ disp('Computing T-F for Active Channel...');
 %Make a local container for the raw data
 chann_ts = [];
 chann_fs = handles.DATA.chann{min(a)}.Fs;
-ds_fact = 2; %Purely for display reasons; need not be put on front-UI
+ds_fact = 1; %Purely for display reasons; need not be put on front-UI
 
 for ii = a
     dummy_chann = handles.DATA.chann{ii};
